@@ -19,7 +19,7 @@ class EditNickNameActivity : AppCompatActivity() {
         btnSave.setOnClickListener {
 
             val inputNickName = edtNickName.text.toString()
-            var resultIntent = Intent()
+            val resultIntent = Intent()
             resultIntent.putExtra("nick",inputNickName)
             setResult(RESULT_OK, resultIntent)
             finish()
