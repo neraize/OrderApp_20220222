@@ -3,7 +3,7 @@
     package="com.nepplus.orderapp_20220222">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrderApp_20220222"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EditNickNameActivity"
+            android:exported="false" />
         <activity
             android:name=".ViewStoreDetailActivity"
             android:exported="false" />
