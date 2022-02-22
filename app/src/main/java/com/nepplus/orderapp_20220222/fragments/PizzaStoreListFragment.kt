@@ -43,5 +43,6 @@ class PizzaStoreListFragment:Fragment() {
 
         mPizzaStoreAdater = StoreAdapter(requireContext(), R.layout.store_list_item, mPizzaStoeList)
         pizzaStoreListView.adapter =mPizzaStoreAdater
+
     }
 }
