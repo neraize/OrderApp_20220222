@@ -53,7 +53,9 @@
         <com.willy.ratingbar.ScaleRatingBar
             android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            app:srb_isIndicator="true"
+            app:srb_stepSize="0.5"/>
 
         <TextView
             android:id="@+id/txtRating"
