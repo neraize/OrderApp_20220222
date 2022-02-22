@@ -1,6 +1,8 @@
 package com.nepplus.orderapp_20220222
 
 import android.Manifest
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -29,6 +31,9 @@ class ViewStoreDetailActivity : AppCompatActivity() {
         val pl = object :PermissionListener{
             override fun onPermissionGranted() {
 
+                val myUri = Uri.parse("tel:${mStoreData.phoneNum}")
+                val myIntent = Intent(Intent.ACTION_CALL, myUri)
+                startActivity(myIntent)
             }
 
             override fun onPermissionDenied(deniedPermissions: MutableList<String>?) {
