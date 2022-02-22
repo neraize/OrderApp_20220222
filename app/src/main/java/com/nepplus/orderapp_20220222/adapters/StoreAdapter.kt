@@ -18,7 +18,7 @@ class StoreAdapter(
 
         var tempRow = convertView
         if(tempRow==null){
-            tempRow = LayoutInflater.from(mContext).inflate(R.layout.fragment_pizza_store_list, null)
+            tempRow = LayoutInflater.from(mContext).inflate(R.layout.store_list_item, null)
         }
 
         val row = tempRow!!
